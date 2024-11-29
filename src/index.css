@@ -1,0 +1,166 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #f0e6d2; /* Creamy background */
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #e74c3c; /* Red cocktail bar vibe */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #7f8c8d;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+/* Search Bar */
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #e74c3c;
+  width: 100%;
+}
+
+.search-button {
+  padding: 10px 20px;
+  justify-self: stretch;
+  font-size: 16px;
+  background-color: #8e44ad; /* Purple accent */
+  border-radius: 5px;
+}
+
+/* Drink Info */
+.drink-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.drink-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+.drink-card h3 {
+  margin-bottom: 8px;
+}
+
+.drink-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.drink-card li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #7f8c8d;
+}
+
+.drink-card p {
+  color: #e74c3c;
+}
+
+/* Drink Image */
+.drink-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.drink-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-container {
+    width: 90%;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    width: 80%;
+  }
+
+  .drink-card {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .drink-image img {
+    max-width: 100%;
+  }
+}
